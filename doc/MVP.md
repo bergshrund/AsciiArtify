@@ -25,5 +25,4 @@ Let's showcase all these steps in the next video:
 
 We can achieve the same using the ArgoCD GUI:
 
-![argo-gui](https://github.com/bergshrund/AsciiArtify/assets/17909431/09570d91-fcc0-43b7-a8bd-a9d8cfb6a2c1)
-
+![gui](https://github.com/bergshrund/AsciiArtify/assets/17909431/15435a84-2783-4bc1-9577-8ef247fcf045)
