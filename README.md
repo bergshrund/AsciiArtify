@@ -1,5 +1,9 @@
 # Comparison of Kubernetes Distros
 
+
+
+
+
 | **Aspect**                   | **Minikube**                                                               | **k3d (K3s in Docker)**                                     | **kind (Kubernetes in Docker)**                             |
 |------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------|
 | **Ease of Use**               | Designed for easy setup and use for local development and testing.        | Lightweight and easy to use, suitable for rapid development. | Fast and customizable, ideal for local development and testing. |
@@ -16,4 +20,11 @@
 - **Minikube:** Good for beginners and those who prioritize ease of use. Suitable for local development and testing, but it can be resource-intensive.
 - **k3d:** Lightweight and fast, making it a good choice for local development. However, it might not be the best fit for production environments.
 - **kind:** Fast and customizable, ideal for local development and testing. While it lacks some features for production, it's well-suited for rapid development cycles.
+
+
+![minikube](https://github.com/bergshrund/AsciiArtify/assets/17909431/0bcb7be0-41df-4800-a958-13d85b9e0e72)
+
+![kind](https://github.com/bergshrund/AsciiArtify/assets/17909431/ea3e4a67-6dff-49de-b74c-a08be304e0d6)
+
+![k3d](https://github.com/bergshrund/AsciiArtify/assets/17909431/a43fd9bf-c6e7-4d49-aa29-2f354e0e6096)
 
