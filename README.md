@@ -1,8 +1,6 @@
-# Comparison of Kubernetes Distros
+# Benchmarking Kubernetes distributions for use in a local development environment.
 
-
-
-
+The next two tables contain general and feature comparisons of Kubernetes distributions that we are considering for integration into the local developer workspace.
 
 | **Aspect**                   | **Minikube**                                                               | **k3d (K3s in Docker)**                                     | **kind (Kubernetes in Docker)**                             |
 |------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------|
@@ -15,16 +13,33 @@
 | **Community Support**         | Well-established community with ample documentation.                      | Smaller community compared to Minikube.                      | Smaller community compared to more established tools.      |
 | **Production Suitability**    | Primarily used for local development and testing.                        | Limited production use, better suited for development.        | Not designed for production but can be used for testing.    |
 
+| **Feature**                   | **Minikube**                                                               | **k3d (K3s in Docker)**                                     | **kind (Kubernetes in Docker)**                             |
+|------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------|
+| **Container Runtime**               | containerd cri-o docker        | containerd docker  | docker cri-o |
+| **Multinode cluster**            | + (require CSI Hostpath Driver addon)                                      | +                 |+    |
+| **Multiserver cluster**        | - | +        | +               |
+| **LoadBalancer**             | +          | +  | + (needs additional installation steps)     |
+| **Local Container Registry**        | +                        | +  | + |
+| **Non-default CNI**             | Calico | Calico   | Calico        |
+| **declarative cluster configuration**         | -                      | + (yaml in an Alpha State)                     | +    |
+| **Podman**    | + (experemental)                        | +     | +   |
+
+The basic setup steps for each of the three Kubernetes distributions are shown in the next short demos.
+
+## Minikube
+
+![minikube](https://github.com/bergshrund/AsciiArtify/assets/17909431/0bcb7be0-41df-4800-a958-13d85b9e0e72)
+
+## Kind
+
+![kind](https://github.com/bergshrund/AsciiArtify/assets/17909431/ea3e4a67-6dff-49de-b74c-a08be304e0d6)
+
+## k3d
+
+![k3d](https://github.com/bergshrund/AsciiArtify/assets/17909431/a43fd9bf-c6e7-4d49-aa29-2f354e0e6096)
+
 ## Summary
 
 - **Minikube:** Good for beginners and those who prioritize ease of use. Suitable for local development and testing, but it can be resource-intensive.
 - **k3d:** Lightweight and fast, making it a good choice for local development. However, it might not be the best fit for production environments.
 - **kind:** Fast and customizable, ideal for local development and testing. While it lacks some features for production, it's well-suited for rapid development cycles.
-
-
-![minikube](https://github.com/bergshrund/AsciiArtify/assets/17909431/0bcb7be0-41df-4800-a958-13d85b9e0e72)
-
-![kind](https://github.com/bergshrund/AsciiArtify/assets/17909431/ea3e4a67-6dff-49de-b74c-a08be304e0d6)
-
-![k3d](https://github.com/bergshrund/AsciiArtify/assets/17909431/a43fd9bf-c6e7-4d49-aa29-2f354e0e6096)
-
